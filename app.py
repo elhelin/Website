@@ -216,7 +216,7 @@ def sint_antoniesbreestraat():
 
 @app.route('/confirmation')
 def confirmation():
-    return render_template('done.html')
+    return redirect('https://uva.fra1.qualtrics.com/jfe/form/SV_51gozPN0PZ6Zk9M')
 
 
 # /log_binary is the route that users are sent to when they click on the "Contact" button. 
