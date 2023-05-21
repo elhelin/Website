@@ -127,6 +127,25 @@ h6 {
   color: #FFFFFF !important;
 }
 
+.btn-learn-more {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 40px;
+  border-radius: 30px;
+  transition: 0.5s;
+  margin: 40px;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+}
+
+.btn-learn-more:hover {
+  background: var(--color-primary);
+  color: var(--color-secondary);
+}
+
   /*--------------------------------------------------------------
 # Navigation Bar
 --------------------------------------------------------------*/
@@ -333,7 +352,7 @@ section {
 }
 
 .form-check-input[type="checkbox"]:checked {
-  background-color: #6D9886; /* Replace with your desired color */
+  background-color: #6D9886;
 }
 
 .form-check-input[type="checkbox"]:focus {
