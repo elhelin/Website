@@ -146,6 +146,22 @@ h6 {
   color: var(--color-secondary);
 }
 
+.img-normal {
+  border-radius: 0.25rem;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  min-height: 300px;
+}
+
+.ill-normal {
+max-width: 100%;
+height: auto;
+object-fit: cover;
+min-height: 300px;
+}
+
   /*--------------------------------------------------------------
 # Navigation Bar
 --------------------------------------------------------------*/
@@ -211,10 +227,31 @@ section {
   color: var(--color-tertiary);
 }
 
+/*--------------------------------------------------------------
+# Follow Up
+--------------------------------------------------------------*/
+
 .followup-header{
   font-weight: bold;
   text-align: center;
   padding-bottom: 20px;
+}
+
+/*--------------------------------------------------------------
+# Map
+--------------------------------------------------------------*/
+#map{
+  position: relative;
+  height: 80vh;
+}
+
+#map-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0%;
+  padding: 0%;
+  overflow: hidden; 
 }
 
 .map-subtitle{
@@ -223,28 +260,18 @@ section {
   color: var(--color-primary);
 }
 
-#verification-message {
-  display: none; 
-  color: var(--color-primary);
-  text-align: center;
-  border-radius: 5px;
+.map-card-title{
+  font-weight: bold;
+  font-size: 16px;
 }
 
-.img-normal {
-    border-radius: 0.25rem;
-    max-width: 100%;
-    height: auto;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    object-fit: cover;
-    min-height: 300px;
-  }
-
-.ill-normal {
-  max-width: 100%;
-  height: auto;
-  object-fit: cover;
-  min-height: 300px;
+.map-card{
+  font-size: 14px;
 }
+
+/*--------------------------------------------------------------
+# Cards
+--------------------------------------------------------------*/
 
 .custom-card-title{
   font-weight: bold;
@@ -266,15 +293,6 @@ section {
   margin-bottom: 10px;
 }
 
-.map-card-title{
-  font-weight: bold;
-  font-size: 16px;
-}
-
-.map-card{
-  font-size: 14px;
-}
-
 .con-button{
   text-align: center;
 }
@@ -285,19 +303,9 @@ section {
   padding-top: 15px;
 }
 
-#map{
-    position: relative;
-    height: 80vh;
-}
-
-#map-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0%;
-    padding: 0%;
-    overflow: hidden; 
-}
+/*--------------------------------------------------------------
+# Locations
+--------------------------------------------------------------*/
 
 .location-container {
   display: flex;
@@ -316,15 +324,11 @@ section {
   object-fit: cover;
 }
 
-.location-title {
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-.row-location{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#verification-message {
+  display: none; 
+  color: var(--color-primary);
+  text-align: center;
+  border-radius: 5px;
 }
 
 .card-img{
@@ -357,4 +361,25 @@ section {
 
 .form-check-input[type="checkbox"]:focus {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+footer {
+  background-color: var(--color-secondary);
+  padding: 10px;
+  text-align: center;
+}
+
+.footer .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer .p {
+  margin: 0;
+  font-size: 14px;
+  color: var(--color-secondary);
 }
